@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 
 var TaskSchema = new mongoose.Schema({
 	user: {type: Schema.Types.ObjectId, ref: "User", required:true},
-	task: {type: String, required: true},
+	text: {type: String, required: true},
 	created_at: {type: Date, default: Date.now, required:true},
 	updated_at: {type: Date, default: Date.now, required:true}
 })
