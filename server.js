@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname + "/client")));
 // require('./server/config/mongoose.js');
 
 // Routes 
-require('./server/config/routes.js')(app);
+// require('./server/config/routes.js')(app);
 
 // Listen
 app.listen(8000)
