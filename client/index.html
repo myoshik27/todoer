@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- add ng-app="app_name_here" -->
+<html lang="en" ng-app="todoer">
 <head>
 	<meta charset="UTF-8">
 	<title>Welcome</title>
+    <link rel="stylesheet" href="static/css/style.css">
 	<!-- include script tags for all factories, controllers and angular files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./static/js/lib/angular.js"></script>
+	<script type="text/javascript" src="./static/js/lib/angular-route.js"></script>
+	<script type="text/javascript" src="./static/js/partial_routes.js"></script>
+    <script type="text/javascript" src="./static/js/controllers/usersAngCtrl.js"></script>
 </head>
 <body>
-	<h1>Welcome to the MEAN Project Template</h1>
+	<div ng-controller="UsersController as UsersCtrl">
+		<h1>Welcome to the MEAN Project Template</h1>
+		<button ng-click="UsersCtrl.getUsers()">Click Here to show Users</button>
+	</div>
 </body>
 </html>
