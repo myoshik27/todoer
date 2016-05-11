@@ -9,6 +9,10 @@ var TaskSchema = new mongoose.Schema({
 	text: {type: String, required: true},
 	created_at: {type: Date, default: Date.now, required:true},
 	updated_at: {type: Date, default: Date.now, required:true}
-})
+});
 
-mongoose.model("Task", TaskSchema);
+// create a model using schema
+var Task = mongoose.model("Task", TaskSchema);
+
+// make this availabe to our users in or Node applications
+module.exports = Task;
