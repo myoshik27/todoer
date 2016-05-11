@@ -4,10 +4,10 @@
 console.log("UsersController Loaded")
 
 
-todoer.controller("UsersController", function(){
+todoer.controller("UsersController", function(UserFactory){
 	var _this = this;
 	
 	this.getUsers = function(){
-		console.log("Getting Users");
+		UserFactory.getUsers();
 	}
 })
