@@ -1,12 +1,13 @@
 // Controller methods get called by partials and call on factory methods
 // Controller anonymous function may inject multiple factories if needed
 
-/*
+console.log("UsersController Loaded")
 
-app_name_here.controller("ControllerNameHere", function(CorrespondingFactoryNameHere){
+
+todoer.controller("UsersController", function(){
 	var _this = this;
 	
-	// Controller Methods go here
+	this.getUsers = function(){
+		console.log("Getting Users");
+	}
 })
-
-*/
