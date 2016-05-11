@@ -11,12 +11,18 @@
 	<script type="text/javascript" src="./static/js/lib/angular-route.js"></script>
 	<script type="text/javascript" src="./static/js/partial_routes.js"></script>
 	<script type="text/javascript" src="./static/js/factories/userAngFac.js"></script>
+	<script type="text/javascript" src="./static/js/factories/taskAngFac.js"></script>
+	<script type="text/javascript" src="./static/js/controllers/tasksAngCtrl.js"></script>
     <script type="text/javascript" src="./static/js/controllers/usersAngCtrl.js"></script>
 </head>
 <body>
-	<div ng-controller="UsersController as UsersCtrl">
-		<h1>Welcome to the MEAN Project Template</h1>
-		<button ng-click="UsersCtrl.getUsers()">Click Here to show Users</button>
+	<div class="container text-center" ng-controller="TasksController as TasksCtrl" >
+		<div class="jumbotron">
+			<h1>Todoer</h1>
+		</div>
+		<div ng-repeat="task in TasksCtrl.tasks">
+			<p>{{task.text}}</p>
+		</div>
 	</div>
 </body>
 </html>
