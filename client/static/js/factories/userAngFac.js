@@ -7,7 +7,6 @@ todoer.factory("UserFactory", function($http){
 		getUsers: function(callback){
 			console.log("getting Users from Factory")
 		}
-
 	};
 
 	return factory;
