@@ -1,14 +1,14 @@
-// factory methods get called by the controller and call on routes. On success, factory should run controller supplied callback function
+// factory methods get called by the controller and call on routes.
+// On success, factory should run controller supplied callback function
 
-/*
-
-app_name_here.factory("FactoryNameHere", function($http){
+todoer.factory("UserFactory", function($http){
 	var factory = {
 
-	// Factory Methods go here
+		getUsers: function(callback){
+			console.log("getting Users from Factory")
+		}
 
 	};
+
 	return factory;
 })
-
-*/
