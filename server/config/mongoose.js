@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var fs = require('fs')
 // connect to the database -- path to database 
 
-// mongoose.connect('mongodb://127.0.0.1:27017/db_name_here');
+mongoose.connect('mongodb://127.0.0.1:27017/todoer_DB');
 
 // specify the path to all of the models
 var models_path = __dirname+'/../models'
