@@ -16,12 +16,11 @@
     <script type="text/javascript" src="./static/js/controllers/usersAngCtrl.js"></script>
 </head>
 <body>
-	<div class="container text-center" ng-controller="TasksController as TasksCtrl" >
+	<div class="container text-center" ng-controller="UsersController as UserCtrl" >
 		<div class="jumbotron">
-			<h1>Todoer</h1>
-		</div>
-		<div ng-repeat="task in TasksCtrl.tasks">
-			<p>{{task.text}}</p>
+			<h1>Hello There</h1>
+			<a class="btn btn-primary" href="/signin">Sign In</a>
+			<a class="btn btn-success" href="/register">Register</a>
 		</div>
 	</div>
 </body>
