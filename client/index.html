@@ -2,6 +2,7 @@
 <html lang="en" ng-app="todoer">
 <head>
 	<meta charset="UTF-8">
+	<base href='/'>
 	<title>Welcome</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,12 +17,6 @@
     <script type="text/javascript" src="./static/js/controllers/usersAngCtrl.js"></script>
 </head>
 <body>
-	<div class="container text-center" ng-controller="UsersController as UserCtrl" >
-		<div class="jumbotron">
-			<h1>Hello There</h1>
-			<a class="btn btn-primary" href="/signin">Sign In</a>
-			<a class="btn btn-success" href="/register">Register</a>
-		</div>
-	</div>
+	<div ng-view=""></div>
 </body>
 </html>

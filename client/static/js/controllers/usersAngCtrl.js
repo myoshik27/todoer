@@ -5,7 +5,10 @@
 todoer.controller("UsersController", function(UserFactory){
 	var _this = this;
 	
-	this.getUsers = function(){
-		UserFactory.getUsers();
+	function getUsers(){
+		UserFactory.getUsers(function(users){
+			_this.users = users;
+		})
 	}
+	getUsers();
 })

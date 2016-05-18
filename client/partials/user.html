@@ -1,4 +1,10 @@
-<div ng-controller="UsersController as UsersCtrl">
-	
-
+<div class="container text-center" ng-controller="UsersController as UserCtrl" >
+		<div class="jumbotron">
+			<h1>Hello There</h1>
+			<a class="btn btn-primary" href="/signin">Sign In</a>
+			<a class="btn btn-success" href="/register">Register</a>
+		</div>
+		<div ng-repeat="user in UserCtrl.users">
+			<p>{{user.first_name}} {{user.last_name}}</p>
+		</div>
 </div>

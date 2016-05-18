@@ -5,9 +5,10 @@ todoer.factory("UserFactory", function($http){
 	var factory = {
 
 		getUsers: function(callback){
-			console.log("getting Users from Factory")
+			$http.get('/getUsers').success(function(response){
+				callback(response);
+			});
 		}
 	};
-
 	return factory;
 })
