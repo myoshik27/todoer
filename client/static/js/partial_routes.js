@@ -5,7 +5,7 @@ var todoer = angular.module('todoer',['ngRoute',])
 todoer.config(function($routeProvider, $locationProvider){
 	$routeProvider
 	.when('/',{
-		templateUrl: './partials/user.html',
+		templateUrl: './partials/home.html',
 	})
 
 	//pretty urls -- requires <base href='/'> in index file header
