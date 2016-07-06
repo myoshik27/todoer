@@ -11,6 +11,11 @@ app.use(bodyParser.json());
 // Static -- Location of static files
 app.use(express.static(path.join(__dirname + "/client")));
 
+// required for pretty urls
+app.all("/*", function(req, res, next) {
+	res.sendfile("index.html", { root: __dirname + "/../todoer/client" });
+});
+
 // Mongoose -- used to connect to MongoDB
 require('./server/config/mongoose.js');
 
